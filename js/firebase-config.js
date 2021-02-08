@@ -2,14 +2,14 @@
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyBmP-m04bgbm3A1MhprTCvs-U_8CFxhAkc",
-    authDomain: "iot-juel.firebaseapp.com",
-    databaseURL: "https://iot-juel-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "iot-juel",
-    storageBucket: "iot-juel.appspot.com",
-    messagingSenderId: "740208477017",
-    appId: "1:740208477017:web:ca024f022484707f9dc248",
-    measurementId: "G-PRDY29CY81"
+    apiKey: "AIzaSyBwaadxlqM3zK_BKGyscH3oWIvncsyoFKA",
+    authDomain: "cotton-7472f.firebaseapp.com",
+    databaseURL: "https://cotton-7472f-default-rtdb.firebaseio.com",
+    projectId: "cotton-7472f",
+    storageBucket: "cotton-7472f.appspot.com",
+    messagingSenderId: "925221953729",
+    appId: "1:925221953729:web:b4e08bb1592a5aa7903440",
+    measurementId: "G-8YEVXB2F32"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
