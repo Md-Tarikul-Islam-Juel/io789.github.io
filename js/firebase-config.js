@@ -1,12 +1,12 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyA2ejW0Uv1cA5l3fHHxl0xAChbPh3Q6AdQ",
-    authDomain: "waterquality-9daf8.firebaseapp.com",
-    databaseURL: "https://waterquality-9daf8.firebaseio.com",
-    projectId: "waterquality-9daf8",
-    storageBucket: "waterquality-9daf8.appspot.com",
-    messagingSenderId: "368707572548",
-    appId: "1:368707572548:web:1b06423e74c5f9039bbd11",
-    measurementId: "G-2RF3FR06JQ"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  var firebaseConfig = {
+    apiKey: "AIzaSyBwaadxlqM3zK_BKGyscH3oWIvncsyoFKA",
+    authDomain: "cotton-7472f.firebaseapp.com",
+    databaseURL: "https://cotton-7472f-default-rtdb.firebaseio.com",
+    projectId: "cotton-7472f",
+    storageBucket: "cotton-7472f.appspot.com",
+    messagingSenderId: "925221953729",
+    appId: "1:925221953729:web:b4e08bb1592a5aa7903440",
+    measurementId: "G-8YEVXB2F32"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
