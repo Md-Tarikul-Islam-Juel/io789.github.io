@@ -4,9 +4,8 @@ const turbidUi = document.getElementById('turbidity');
 const phUi = document.getElementById('phVal');
 
 //processing returned object value. Keys name are random, so picking last key and return the value.
+
 processVal = (obj) => Number(obj[Object.keys(obj)[Object.keys(obj).length - 1]]);
-
-
 
 
 const manipulateUi = ({ TempinC, TempinF, Turbidity, pH }) => {
