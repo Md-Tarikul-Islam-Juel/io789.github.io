@@ -1,6 +1,5 @@
 const tempCUi = document.getElementById('tempinC'),
     tempFUi = document.getElementById('tempinF'),
-    timeUi = document.getElementById('time'),
     turbidUi = document.getElementById('turbidity'),
     phUi = document.getElementById('phVal'),
     waterAlertUi = document.getElementById('water-alert'),
@@ -49,7 +48,7 @@ const purposeSuitablity =(purpose,idealpHRange,idealTRange,pH,T,idealF=null,idea
     }
    
     txt = `Not Suitable for ${purpose}`;
-    html = `<span class="text-danger"> <i class="fas fa-times-circle"></i> ${txt}</span>`
+   
     return html
 
 }
@@ -71,16 +70,14 @@ const setAcidityUi = (pH,ui) =>{
 }
 
 
-const manipulateUi = ({ TempinC, TempinF, Time, Turbidity, pH }) => {
+const manipulateUi = ({ TempinC, TempinF, Turbidity, pH }) => {
     const tempinC = processVal(TempinC),
         tempinF = processVal(TempinF),
-        time = processVal(Time),
         turbidity = processVal(Turbidity),
         phVal = processVal(pH);
     
     tempCUi.textContent = tempinC +' °C';   
     tempFUi.textContent = tempinF+ ' °F';   
-    timeUi.textContent = new Date(time).toLocaleTimeString();   
     turbidUi.textContent = turbidity;   
     phUi.textContent = phVal;  
 
