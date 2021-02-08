@@ -5,7 +5,7 @@ const phUi = document.getElementById('phVal');
 
 //processing returned object value. Keys name are random, so picking last key and return the value.
 
-processVal = (obj) => Number(obj[Object.keys(obj)[Object.keys(obj).length - 1]]);
+processVal = (obj) => Number(obj);
 
 
 const manipulateUi = ({ TempinC, TempinF, Turbidity, pH }) => {
@@ -23,8 +23,10 @@ const manipulateUi = ({ TempinC, TempinF, Turbidity, pH }) => {
 
 
 const ref = firebase.database().ref();
-
 ref.on('value', snapshot => {
     const val = snapshot.val();
     manipulateUi(val);
 });
+
+
+
