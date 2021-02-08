@@ -1,24 +1,19 @@
-const tempCUi = document.getElementById('tempinC'),
-    tempFUi = document.getElementById('tempinF'),
-    turbidUi = document.getElementById('turbidity'),
-    phUi = document.getElementById('phVal'),
+const tempCUi = document.getElementById('tempinC');
+const tempFUi = document.getElementById('tempinF');
+const turbidUi = document.getElementById('turbidity');
+const phUi = document.getElementById('phVal');
 
-    //processing returned object value. Keys name are random, so picking last key and return the value.
-    processVal = (obj) => Number(obj[Object.keys(obj)[Object.keys(obj).length - 1]]);
-
-
-
-
-
+//processing returned object value. Keys name are random, so picking last key and return the value.
+processVal = (obj) => Number(obj[Object.keys(obj)[Object.keys(obj).length - 1]]);
 
 
 
 
 const manipulateUi = ({ TempinC, TempinF, Turbidity, pH }) => {
-    const tempinC = processVal(TempinC),
-        tempinF = processVal(TempinF),
-        turbidity = processVal(Turbidity),
-        phVal = processVal(pH);
+    const tempinC = processVal(TempinC);
+    const tempinF = processVal(TempinF);
+    const turbidity = processVal(Turbidity);
+    const phVal = processVal(pH);
     
     tempCUi.textContent = tempinC +' °C';   
     tempFUi.textContent = tempinF+ ' °F';   
