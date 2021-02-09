@@ -1,23 +1,23 @@
-const tempCUi = document.getElementById('tempinC');
-const tempFUi = document.getElementById('tempinF');
+const tempCUi = document.getElementById('tempC');
+const tempFUi = document.getElementById('tempF');
 const turbidUi = document.getElementById('turbidity');
-const phUi = document.getElementById('phVal');
+const phUi = document.getElementById('ph');
 
 //processing returned object value. Keys name are random, so picking last key and return the value.
 
 processVal = (obj) => Number(obj);
 
-
+/*TempinC, TempinF, Turbidity, pH should be matched with RTDB of Firebase*/
 const manipulateUi = ({ TempinC, TempinF, Turbidity, pH }) => {
-    const tempinC = processVal(TempinC);
-    const tempinF = processVal(TempinF);
-    const turbidity = processVal(Turbidity);
-    const phVal = processVal(pH);
+    const TEMPinC = processVal(TempinC);
+    const TEMPinF = processVal(TempinF);
+    const TURBIDITY = processVal(Turbidity);
+    const PH = processVal(pH);
     
-    tempCUi.textContent = tempinC +' °C';   
-    tempFUi.textContent = tempinF+ ' °F';   
-    turbidUi.textContent = turbidity;   
-    phUi.textContent = phVal;    
+    tempCUi.textContent = TEMPinC + ' °C';   
+    tempFUi.textContent = TEMPinF + ' °F';   
+    turbidUi.textContent = TURBIDITY;   
+    phUi.textContent = PH;    
 }
 
 
