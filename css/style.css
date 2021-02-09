@@ -33,18 +33,8 @@ body{
     font-size:1.8rem;
 }
 
-.properties p{
-    margin-top:0.7rem;
-    color:rgb(32, 112, 32)
-}
 
-.properties.bg-danger p{
-    color:rgb(110, 212, 110)
-}
 
-.properties p i{
-    font-size:0.9rem;
-}
 
 
 
