@@ -1,36 +1,27 @@
 body{
+    display:block;
     width:100%;
-    min-height:100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background:#fafafa;
 }
 
 .properties{
-    width:160px;
-    height:160px;
+    display:block;
+    width:100%;
     background:#eaeaea;
-    margin-left:2rem;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;    
-}
-
-.result-parent > div {
-    display:flex;
-}
-
-.properties h4{
-    font-weight:300;
-    margin-bottom:0.3rem;
-
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:10px;
+    margin: 10px 0px 10px;
 }
 
 .properties h1{
-    font-size:1.8rem;
+    font-weight:500;
+    font-size:24px;
+}
+
+.properties h2{
+    font-weight:600;
+    margin-bottom:32px;
 }
 
 
@@ -38,35 +29,5 @@ body{
 
 
 
-/*----------- Responsive CSS------------*/
-@media only screen and (max-width:768px){
-    .footer-result ul{
-        justify-content: center;
-    }
-}
 
-
-
-
-@media only screen and (max-width:991px){
-    section{
-        flex-direction:column;
-    }
-   
-    .result-parent{
-        margin-top:2rem;
-    }
-   
-    .property-result{
-        display:flex;
-        flex-direction: row;
-        flex-wrap:wrap;
-        justify-content: center;
-       
-    }
-    .property-result > div{
-        margin: 0 0.5rem 1rem;
-    }
-
-}
 
