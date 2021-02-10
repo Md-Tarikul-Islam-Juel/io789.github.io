@@ -1,24 +1,18 @@
-const tempCUi = document.getElementById('tempC');
-const tempFUi = document.getElementById('tempF');
-const turbidUi = document.getElementById('turbidity');
-const phUi = document.getElementById('ph');
+const Machine1Ui = document.getElementById('MACHINE1');
+const Machine2Ui = document.getElementById('MACHINE2');
 
 
 //processing returned object value. Keys name are random, so picking last key and return the value.
 processVal = (obj) => Number(obj);
 
 
-//TempinC, TempinF, Turbidity, pH should be matched with RTDB of Firebase
-const manipulateUi = ({ TempinC, TempinF, Turbidity, pH }) => {
-    const TEMPinC = processVal(TempinC);
-    const TEMPinF = processVal(TempinF);
-    const TURBIDITY = processVal(Turbidity);
-    const PH = processVal(pH);
-    
-    tempCUi.textContent = TEMPinC + ' °C';   
-    tempFUi.textContent = TEMPinF + ' °F';   
-    turbidUi.textContent = TURBIDITY;   
-    phUi.textContent = PH;    
+//M1, M2 should be matched with RTDB of Firebase
+const manipulateUi = ({M1, M2}) => {
+    const Machine_1 = processVal(M1);
+    const Machine_2 = processVal(M2);
+
+    Machine1Ui.textContent = Machine_1 + ' rpm';   
+    Machine2Ui.textContent = Machine_2 + ' rpm';     
 }
 
 
